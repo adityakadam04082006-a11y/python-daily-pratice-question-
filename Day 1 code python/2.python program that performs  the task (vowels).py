@@ -32,4 +32,9 @@ else:
 
 print("vowel found :",vowel_found)
     
-
+#steps of how this code works
+#first loop _ word-level logic
+#second loop - character-level logic
+#if checks existence
+#count tracks words
+# vowwel_found tracks unique vowels
