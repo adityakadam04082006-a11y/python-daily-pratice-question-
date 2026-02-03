@@ -1,8 +1,18 @@
-# basics
-def find_sum(a, b):
-    return a + b
+# Q2 – Number Analyzer (function to classify number as positive/negative/zero and 
+# even/odd)
+num = int(input("enter number :"))
+def analyze_num(n):
+    if n == 0:
+        result = ("Zero")
 
-x = int(input("Enter first number: "))
-y = int(input("Enter second number: "))
+    elif(n > 0 and n %2 == 0):
+        result = ("positive even")
+    elif(n > 0 and n %2 != 0):
+        result = ("positive odd")  
+    elif(n < 0 and n %2 == 0):
+        result = ("negative even")  
+    else:
+        result = ("negative odd")           
 
-print("Sum is:", find_sum(x, y))
+    return result
+print(analyze_num(num))
